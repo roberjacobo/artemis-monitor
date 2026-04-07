@@ -1,0 +1,13 @@
+[package]
+name = "dsn_parser"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "dsn_parser"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.27.0"
+quick-xml = { version = "0.37", features = ["serialize"] }
